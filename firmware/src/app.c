@@ -121,7 +121,7 @@ void APP_Initialize ( void )
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
-    BSP_LEDOn(BSP_LED_3);
+    
 }
 
 
@@ -142,14 +142,7 @@ void APP_Tasks ( void )
         /* Application's initial state. */
         case APP_STATE_INIT:
         {
-            bool appInitialized = true;
-       
-        
-            if (appInitialized)
-            {
-            
-                appData.state = APP_STATE_SERVICE_TASKS;
-            }
+            appData.state = APP_STATE_SERVICE_TASKS;
             break;
         }
 
